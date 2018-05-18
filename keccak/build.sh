@@ -2,7 +2,7 @@
 
 cargo build --release --target wasm32-unknown-unknown
 
-wasm-build ../target pwasm_crypto_keccak --public-api=hash --target=wasm32-unknown-unknown --final=keccak --save-raw=../target/keccak-raw.wasm
+wasm-build ../target pwasm_crypto_keccak --public-api=keccak256,keccak384,keccak512 --target=wasm32-unknown-unknown --final=keccak --save-raw=../target/keccak-raw.wasm
 
 cp ../target/keccak.wasm ../compiled
 cp ../target/keccak-raw.wasm ../compiled

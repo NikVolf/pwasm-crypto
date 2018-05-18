@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pwasm-std = "0.8"
+tiny-keccak = "1.4.0"
